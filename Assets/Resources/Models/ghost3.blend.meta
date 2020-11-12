@@ -1,0 +1,178 @@
+fileFormatVersion: 2
+guid: d71ec15b63d85df488c5ea4d3cf4b5e9
+timeCreated: 1578823933
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Armature
+    100002: //RootNode
+    100004: Head
+    100006: horns_001
+    100008: L_Arm_1
+    100010: L_Arm_2
+    100012: L_Arm_3
+    100014: L_Hand_0
+    100016: L_Hand_A_1
+    100018: L_Hand_A_2
+    100020: L_Hand_A_3
+    100022: L_Hand_B_1
+    100024: L_Hand_B_2
+    100026: L_Hand_B_3
+    100028: L_Hand_C_1
+    100030: L_Hand_C_2
+    100032: L_Hand_C_3
+    100034: L_Hand_D_1
+    100036: L_Hand_D_2
+    100038: L_Hand_D_3
+    100040: Model
+    100042: Neck
+    100044: R_Arm_1
+    100046: R_Arm_2
+    100048: R_Arm_3
+    100050: R_Hand_0
+    100052: R_Hand_A_1
+    100054: R_Hand_A_2
+    100056: R_Hand_A_3
+    100058: R_Hand_B_1
+    100060: R_Hand_B_2
+    100062: R_Hand_B_3
+    100064: R_Hand_C_1
+    100066: R_Hand_C_2
+    100068: R_Hand_C_3
+    100070: R_Hand_D_1
+    100072: R_Hand_D_2
+    100074: R_Hand_D_3
+    100076: Spine_1
+    100078: Spine_2
+    100080: Spine_3
+    100082: Spine_4
+    100084: Spine_5
+    100086: Spine_6
+    100088: Spine_7
+    100090: Spine_8
+    100092: Spine_9
+    400000: Armature
+    400002: //RootNode
+    400004: Head
+    400006: horns_001
+    400008: L_Arm_1
+    400010: L_Arm_2
+    400012: L_Arm_3
+    400014: L_Hand_0
+    400016: L_Hand_A_1
+    400018: L_Hand_A_2
+    400020: L_Hand_A_3
+    400022: L_Hand_B_1
+    400024: L_Hand_B_2
+    400026: L_Hand_B_3
+    400028: L_Hand_C_1
+    400030: L_Hand_C_2
+    400032: L_Hand_C_3
+    400034: L_Hand_D_1
+    400036: L_Hand_D_2
+    400038: L_Hand_D_3
+    400040: Model
+    400042: Neck
+    400044: R_Arm_1
+    400046: R_Arm_2
+    400048: R_Arm_3
+    400050: R_Hand_0
+    400052: R_Hand_A_1
+    400054: R_Hand_A_2
+    400056: R_Hand_A_3
+    400058: R_Hand_B_1
+    400060: R_Hand_B_2
+    400062: R_Hand_B_3
+    400064: R_Hand_C_1
+    400066: R_Hand_C_2
+    400068: R_Hand_C_3
+    400070: R_Hand_D_1
+    400072: R_Hand_D_2
+    400074: R_Hand_D_3
+    400076: Spine_1
+    400078: Spine_2
+    400080: Spine_3
+    400082: Spine_4
+    400084: Spine_5
+    400086: Spine_6
+    400088: Spine_7
+    400090: Spine_8
+    400092: Spine_9
+    2300000: horns_001
+    3300000: horns_001
+    4300000: Model
+    4300002: horns_001
+    7400000: Default Take
+    9500000: //RootNode
+    13700000: Model
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

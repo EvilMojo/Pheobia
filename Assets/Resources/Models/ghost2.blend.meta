@@ -1,0 +1,245 @@
+fileFormatVersion: 2
+guid: f9ce3ed3983549749b5a954965586ce6
+timeCreated: 1578317133
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: BezierCircle
+    100002: BezierCircle_001
+    100004: BezierCircle_002
+    100006: BezierCurve
+    100008: BezierCurve_001
+    100010: BezierCurve_002
+    100012: bodycurve
+    100014: bodycurve_001
+    100016: Cube
+    100018: curve1_001
+    100020: //RootNode
+    100022: horn_001
+    100024: horncurve_001
+    100026: horns
+    100028: horns_001
+    100030: Sphere
+    100032: Armature
+    100034: Cube_001
+    100036: Head
+    100038: L_Arm_1
+    100040: L_Arm_2
+    100042: L_Arm_3
+    100044: L_Hand_A_1
+    100046: L_Hand_A_2
+    100048: L_Hand_A_3
+    100050: L_Hand_B_1
+    100052: L_Hand_B_2
+    100054: L_Hand_B_3
+    100056: L_Hand_C_1
+    100058: L_Hand_C_2
+    100060: L_Hand_C_3
+    100062: L_Hand_D_1
+    100064: L_Hand_D_2
+    100066: L_Hand_D_3
+    100068: Neck
+    100070: R_Arm_1
+    100072: R_Arm_2
+    100074: R_Arm_3
+    100076: R_Hand_A_1
+    100078: R_Hand_A_2
+    100080: R_Hand_A_3
+    100082: R_Hand_B_1
+    100084: R_Hand_B_2
+    100086: R_Hand_B_3
+    100088: R_Hand_C_1
+    100090: R_Hand_C_2
+    100092: R_Hand_C_3
+    100094: R_Hand_D_1
+    100096: R_Hand_D_2
+    100098: R_Hand_D_3
+    100100: Spine_1
+    100102: Spine_2
+    100104: Spine_3
+    100106: Spine_4
+    100108: Spine_5
+    100110: Spine_6
+    100112: Spine_7
+    100114: Spine_8
+    100116: Spine_9
+    400000: BezierCircle
+    400002: BezierCircle_001
+    400004: BezierCircle_002
+    400006: BezierCurve
+    400008: BezierCurve_001
+    400010: BezierCurve_002
+    400012: bodycurve
+    400014: bodycurve_001
+    400016: Cube
+    400018: curve1_001
+    400020: //RootNode
+    400022: horn_001
+    400024: horncurve_001
+    400026: horns
+    400028: horns_001
+    400030: Sphere
+    400032: Armature
+    400034: Cube_001
+    400036: Head
+    400038: L_Arm_1
+    400040: L_Arm_2
+    400042: L_Arm_3
+    400044: L_Hand_A_1
+    400046: L_Hand_A_2
+    400048: L_Hand_A_3
+    400050: L_Hand_B_1
+    400052: L_Hand_B_2
+    400054: L_Hand_B_3
+    400056: L_Hand_C_1
+    400058: L_Hand_C_2
+    400060: L_Hand_C_3
+    400062: L_Hand_D_1
+    400064: L_Hand_D_2
+    400066: L_Hand_D_3
+    400068: Neck
+    400070: R_Arm_1
+    400072: R_Arm_2
+    400074: R_Arm_3
+    400076: R_Hand_A_1
+    400078: R_Hand_A_2
+    400080: R_Hand_A_3
+    400082: R_Hand_B_1
+    400084: R_Hand_B_2
+    400086: R_Hand_B_3
+    400088: R_Hand_C_1
+    400090: R_Hand_C_2
+    400092: R_Hand_C_3
+    400094: R_Hand_D_1
+    400096: R_Hand_D_2
+    400098: R_Hand_D_3
+    400100: Spine_1
+    400102: Spine_2
+    400104: Spine_3
+    400106: Spine_4
+    400108: Spine_5
+    400110: Spine_6
+    400112: Spine_7
+    400114: Spine_8
+    400116: Spine_9
+    2300000: BezierCircle
+    2300002: BezierCircle_001
+    2300004: BezierCircle_002
+    2300006: BezierCurve
+    2300008: BezierCurve_001
+    2300010: BezierCurve_002
+    2300012: bodycurve
+    2300014: bodycurve_001
+    2300016: Cube
+    2300018: curve1_001
+    2300020: horn_001
+    2300022: horncurve_001
+    2300024: horns
+    2300026: horns_001
+    2300028: Sphere
+    2300030: Cube_001
+    3300000: BezierCircle
+    3300002: BezierCircle_001
+    3300004: BezierCircle_002
+    3300006: BezierCurve
+    3300008: BezierCurve_001
+    3300010: BezierCurve_002
+    3300012: bodycurve
+    3300014: bodycurve_001
+    3300016: Cube
+    3300018: curve1_001
+    3300020: horn_001
+    3300022: horncurve_001
+    3300024: horns
+    3300026: horns_001
+    3300028: Sphere
+    3300030: Cube_001
+    4300000: BezierCurve
+    4300002: BezierCircle
+    4300004: horns
+    4300006: Cube
+    4300008: Sphere
+    4300010: horn_001
+    4300012: horncurve_001
+    4300014: curve1_001
+    4300016: bodycurve
+    4300018: horns_001
+    4300020: BezierCircle_001
+    4300022: BezierCurve_001
+    4300024: BezierCircle_002
+    4300026: BezierCurve_002
+    4300028: bodycurve_001
+    4300030: Cube_001
+    7400000: Default Take
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
