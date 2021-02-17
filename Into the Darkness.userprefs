@@ -1,0 +1,31 @@
+﻿<Properties StartupItem="Assembly-CSharp.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Resources\Scripts\breakableStick.cs">
+    <Files>
+      <File FileName="Assets\Resources\Scripts\LevelData.cs" Line="1" Column="1" />
+      <File FileName="Assets\Resources\Scripts\Activatable.cs" Line="1" Column="1" />
+      <File FileName="Assets\Resources\Scripts\PlayerGUI.cs" Line="23" Column="1" />
+      <File FileName="Assets\Resources\Scripts\CameraControl.cs" Line="1" Column="1" />
+      <File FileName="Assets\Resources\Scripts\SceneTransferController.cs" Line="1" Column="1" />
+      <File FileName="Assets\Resources\Scripts\Moveable.cs" Line="1" Column="1" />
+      <File FileName="Assets\Resources\Scripts\SpearTrap.cs" Line="1" Column="1" />
+      <File FileName="Assets\Resources\Scripts\Fader.cs" Line="1" Column="1" />
+      <File FileName="Assets\Resources\Scripts\Campfire.cs" Line="1" Column="1" />
+      <File FileName="Assets\Resources\Scripts\Item.cs" Line="1" Column="1" />
+      <File FileName="Assets\Resources\Scripts\LevelManager.cs" Line="58" Column="3" NotebookId="1" />
+      <File FileName="Assets\Resources\Scripts\GameManager.cs" Line="1" Column="1" NotebookId="1" />
+      <File FileName="Assets\Resources\Scripts\PlayerInteraction.cs" Line="1" Column="1" NotebookId="1" />
+      <File FileName="Assets\Resources\Scripts\Monster.cs" Line="1" Column="1" NotebookId="1" />
+      <File FileName="Assets\Resources\Scripts\Climbable.cs" Line="1" Column="1" NotebookId="1" />
+      <File FileName="Assets\Resources\Scripts\Climber.cs" Line="1" Column="1" NotebookId="1" />
+      <File FileName="Assets\Resources\Scripts\PlayerMovement.cs" Line="1" Column="1" NotebookId="1" />
+      <File FileName="Assets\Resources\Scripts\PlayerManager.cs" Line="1" Column="1" NotebookId="1" />
+      <File FileName="Assets\Resources\Scripts\DetectFloor.cs" Line="1" Column="1" NotebookId="1" />
+      <File FileName="Assets\Resources\Scripts\breakableStick.cs" Line="29" Column="4" NotebookId="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

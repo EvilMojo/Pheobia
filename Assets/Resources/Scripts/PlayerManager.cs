@@ -15,6 +15,14 @@ public class PlayerManager : MonoBehaviour {
 	//Camera Controls
 	public GameObject cameraTarget;
 
+	//Player Keyboard Inputs
+	//Will need to use code below to convert string to keycode
+	//KeyCode thisKeyCode = (KeyCode) System.Enum.Parse(typeof(KeyCode), "Whatever") ;
+	public KeyCode up, down, left, right; //movement
+	public KeyCode interact, useItem, climb, unused; //xbox A,B,X,Y buttons
+	public KeyCode run, throwItem; //xbox triggers
+	public KeyCode cycleLeft, cycleRight; //xbox bumpers
+
 	//External Player Scripts
 	public PlayerInteraction interactionScript;
 	public PlayerMovement movementScript;
@@ -23,6 +31,8 @@ public class PlayerManager : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+
+		setPlayerInputs ();
 
 		dead = false;
 
@@ -54,6 +64,19 @@ public class PlayerManager : MonoBehaviour {
 
 	}
 
+	public void setPlayerInputs() {
+		up = (KeyCode) System.Enum.Parse(typeof(KeyCode), "W");
+		down = (KeyCode) System.Enum.Parse(typeof(KeyCode), "S");
+		left = (KeyCode) System.Enum.Parse(typeof(KeyCode), "A");
+		right = (KeyCode) System.Enum.Parse(typeof(KeyCode), "D");
+		interact = (KeyCode) System.Enum.Parse(typeof(KeyCode), "E");
+		useItem = (KeyCode) System.Enum.Parse(typeof(KeyCode), "F");
+		climb = (KeyCode) System.Enum.Parse(typeof(KeyCode), "Q");
+		run = KeyCode.LeftShift;
+		throwItem = (KeyCode) System.Enum.Parse(typeof(KeyCode), "R");
+		cycleRight = KeyCode.Tab;
+	}
+
 	public void preserve() {
 		DontDestroyOnLoad (this.gameObject);
 	}
@@ -65,12 +88,12 @@ public class PlayerManager : MonoBehaviour {
 	void Update () {
 
 		//print (this.transform.rotation.eulerAngles.y);
-
+        /*
 		if (!dead) {
 			cameraTarget.transform.Find("Fader").gameObject.GetComponent<Fader>().faded = false;
 			this.gameObject.SetActive (true);
 			//Destroy (GameObject.Find("playerCharacter ragdoll"));
-		}
+		}*/
 
 		if (GameObject.Find ("PlayerSpawnPoint") == null) {
 			print ("CREATING NEW SPAWNPOINT");
@@ -82,21 +105,22 @@ public class PlayerManager : MonoBehaviour {
 		//Non-Movement Input Management
 			
 		//Used to switch what item is being highlighted in inventory
-		if (Input.GetButtonDown ("IncrementInventory")) {
+		if (Input.GetButtonDown ("IncrementInventory") || Input.GetKeyDown(cycleRight)) {
 			cycleItem (true);
-		} else if (Input.GetButtonDown ("DecrementInventory")) {
+		} else if (Input.GetButtonDown ("DecrementInventory") || Input.GetKeyDown(cycleLeft)) {
 			cycleItem (false);
 		}
 
 		//A - Interact with environment objects
-		if (Input.GetButtonDown("Interact")) { //Xbox 360 'A' button
+		if (Input.GetButtonDown("Interact") || Input.GetKeyDown(interact)) { //Xbox 360 'A' button
 			if (interactionScript.interact () == false) {
+                if (inventory [0] != null)
 				inventory [0].GetComponent<Item> ().dropItem ();
 			}
 		}
 
 		//B - Use the item the player is holding
-		if (Input.GetButtonDown("UseItem")) { //Xbox 360 'B' button
+		if (Input.GetButtonDown("UseItem")  || Input.GetKeyDown(useItem)) { //Xbox 360 'B' button
 			if (this.gameObject.GetComponent<Climber> ().hanging) {
 				this.gameObject.GetComponent<Climber> ().drop ();
 			} else {
@@ -109,13 +133,17 @@ public class PlayerManager : MonoBehaviour {
 		}
 	
 		//X - Climb stuff
-		if (Input.GetButtonDown("Climb")) {//Xbox 360 'X' button
+		if (Input.GetButtonDown("Climb") || Input.GetKeyDown(climb)) {//Xbox 360 'X' button
 			//this.gameObject.GetComponent<Climber> ().climb ();
+			if (this.gameObject.GetComponent<Climber> ().hanging == false) {
 				this.gameObject.GetComponent<Climber> ().processClimb (this.gameObject.GetComponent<Climber> ().drawClimbingRay (this.gameObject.transform), this.gameObject);
+			} else {
+				this.gameObject.GetComponent<Climber> ().processClimb (this.gameObject.GetComponent<Climber> ().drawClimbingRay (this.gameObject.transform), this.gameObject);
+			}
 		}
 
 		//Y - Used to access inventory item
-		if (Input.GetButtonDown("Inventory")) {//Xbox 360 'Y' button
+		if (Input.GetButtonDown("Inventory") || Input.GetKeyDown(unused)) {//Xbox 360 'Y' button
 			//if (itemInHand != null) {
 			//swapItem ();
 			//} else {
@@ -123,13 +151,13 @@ public class PlayerManager : MonoBehaviour {
 			//}
 		}
 
-		if (Input.GetAxis("PlayerLeftTrigger") > deadzone) {
+		if (Input.GetAxis("PlayerLeftTrigger") > deadzone || Input.GetKey(run)) {
 			this.GetComponent<PlayerMovement>().moveSpeed = 6.5f;
 		} else {
 			this.GetComponent<PlayerMovement>().moveSpeed = 3.0f;
 		}
 
-		if (Input.GetAxis("PlayerRightTrigger") > deadzone) {
+		if (Input.GetAxis("PlayerRightTrigger") > deadzone || Input.GetKeyDown(throwItem)) {
 			if (inventory [0] != null) {
 				inventory [0].GetComponent<Item> ().throwItem ();
 			}

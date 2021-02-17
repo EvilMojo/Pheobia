@@ -135,6 +135,7 @@ public class DetectFloor : MonoBehaviour {
 			rbody.mass = 20;
 		}
 
+		//print (this.gameObject.name);
 		SceneManager.MoveGameObjectToScene (this.gameObject, SceneManager.GetActiveScene ());
 
 		transform.Find("AreaTriggerX").gameObject.GetComponent<Moveable>().gripped = false;

@@ -8,7 +8,7 @@ public class Fader : MonoBehaviour {
 	public float transparencyControl;
 	public const float MAX_FADE = 1.0f;
 	public const float fadeRate = 0.01f;
-	private float timer;
+	public float timer;
 	public GameObject targetPlayer;
 
 	// Use this for initialization
@@ -23,8 +23,10 @@ public class Fader : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
-		if (timer != -1) {
+
+        this.gameObject.GetComponent<MeshRenderer>().material.color = new Color(0.0f, 0.0f, 0.0f, transparencyControl);
+
+        if (timer != -1) {
 			if (timer <= 0 && timer > -1) {
 				if (!faded && transparencyControl > 0) {
 					transparencyControl -= fadeRate;
@@ -36,12 +38,10 @@ public class Fader : MonoBehaviour {
 			}
 		}
 
-
-		this.gameObject.GetComponent<MeshRenderer> ().material.color = new Color (0.0f, 0.0f, 0.0f, transparencyControl);
-
 		if (transparencyControl >= 1.0f) {
 			targetPlayer.GetComponent<PlayerManager> ().revive ();
 		}
+        
 		if (respawnOk) {
 			faded = false;
 			transparencyControl = 0.0f;
@@ -54,6 +54,5 @@ public class Fader : MonoBehaviour {
 		this.timer = timer;
 		this.faded = faded;
 		respawnOk = false;
-		print ("toggled");
 	}
 }

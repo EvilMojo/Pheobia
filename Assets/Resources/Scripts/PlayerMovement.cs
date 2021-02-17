@@ -24,6 +24,7 @@ public class PlayerMovement : MonoBehaviour {
 	}//0 Not locked - 1 Locked to x - 2 locked to z
 	public shimmyLock shimmy;
 	public GameObject leftShimmyReach, rightShimmyReach;
+	PlayerManager manager;
 
 
 	// Use this for initialization
@@ -51,6 +52,8 @@ public class PlayerMovement : MonoBehaviour {
 		rotateSpeed = 25.0f;
 		rotationlastFrame = 0;
 		rb = this.gameObject.transform.gameObject.GetComponent<Rigidbody> ();
+
+		manager = this.gameObject.GetComponent<PlayerManager> ();
 	}
 	
 	// Update is called once per frame
@@ -81,6 +84,7 @@ public class PlayerMovement : MonoBehaviour {
 			}
 		}*/
 
+
 		if (characterLocked <= 0 && !characterFrozen) {
 			float moveZ = -Input.GetAxis ("PlayerLeftStickY");
 			float moveX = Input.GetAxis ("PlayerLeftStickX");
@@ -88,6 +92,22 @@ public class PlayerMovement : MonoBehaviour {
 			stickInput.y = Input.GetAxisRaw ("PlayerLeftStickY");
 			stickInput.x = Input.GetAxisRaw ("PlayerLeftStickX") * -1;
 
+			if (Input.GetKey (manager.up) || Input.GetKey (manager.down) || Input.GetKey (manager.left) || Input.GetKey (manager.right)) {
+				stickInput = Vector2.zero;
+				if (Input.GetKey (manager.up)) {
+					stickInput.y = -1;
+				}
+				if (Input.GetKey (manager.down)) {
+					stickInput.y = 1;
+				}
+				if (Input.GetKey (manager.left)) {
+					stickInput.x = 1;
+				}
+				if (Input.GetKey (manager.right)) {
+					stickInput.x = -1;
+				}
+			}
+				
 			//print (stickInput);
 
 

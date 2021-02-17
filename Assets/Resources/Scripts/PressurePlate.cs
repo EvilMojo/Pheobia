@@ -38,9 +38,13 @@ public class PressurePlate : Activatable {
 			activated = true;
 			animator.SetBool ("active", true);
 			foreach (GameObject o in targetList) {
-				if (o.GetComponent<Activatable> () != null) {
-					o.GetComponent<Activatable> ().activate ();
-				}
+                if (o != null)
+                {
+                    if (o.GetComponent<Activatable>() != null)
+                    {
+                        o.GetComponent<Activatable>().activate();
+                    }
+                }
 			}
 		}
 	}

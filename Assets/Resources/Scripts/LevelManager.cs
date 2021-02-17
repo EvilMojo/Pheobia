@@ -5,7 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class LevelManager : MonoBehaviour {
 
-	public List<GameObject> levelData;
 
 	public struct State {
 		public string name;
@@ -14,10 +13,10 @@ public class LevelManager : MonoBehaviour {
 		public bool activated;
 	}
 
+	public List<State> genericDataList;
+    public List<GameObject> levelData;
 
-	public List<State> interactablesData; 
-
-	public string loadedFlag = "_[Loaded]";
+    public string loadedFlag = "_[Loaded]";
 
 	/* A level manager will be responsible for controlling the state of all objects within a level
 	 * 
@@ -54,15 +53,11 @@ public class LevelManager : MonoBehaviour {
 		//Only for if we need to create a new object. But this doesn't add data from tags
 		GameObject newLevelData = new GameObject(levelName + " Level Data");
 		newLevelData.transform.SetParent (this.gameObject.transform);
-		levelData.Add (newLevelData);
-
 		newLevelData.AddComponent<LevelData>();
 		newLevelData.GetComponent<LevelData>().createData ();
 
-		foreach (GameObject obj in levelData) {
-			print (obj.name);
-		}
-	}
+        this.levelData.Add(newLevelData);
+    }
 
 	public bool findLevelData(string levelName) {
 		foreach (GameObject level in levelData) {
@@ -77,36 +72,43 @@ public class LevelManager : MonoBehaviour {
 		
 	}
 
-	public void saveLevelObjects(List<GameObject> interactables) {
-
+	public void saveLevelObjects(List<GameObject> genericData) {
+		/*
 		print ("Saving data...");
 
-		interactablesData = new List<State> ();
-		foreach (GameObject obj in interactables) {
-			State data;
+        genericDataList = new List<State> ();
+        foreach (GameObject obj in genericData)
+        {
+            if (obj != null) {
+                State data;
 
-			data.name = obj.name;
-			data.position = new Vector3 (obj.transform.position.x, obj.transform.position.y, obj.transform.position.z);
-			data.rotation = new Quaternion (0, 0, 0, 0);
-			data.activated = false;
+                data.name = obj.name;
+                data.position = new Vector3(obj.transform.position.x, obj.transform.position.y, obj.transform.position.z);
+                data.rotation = new Quaternion(0, 0, 0, 0);
+                data.activated = false;
 
-			if (obj.GetComponent<Activatable> () != null) {
-				print ("Activatable");
-				data.activated = obj.GetComponent<Activatable>().activated;
-			}
+                if (obj.GetComponent<Activatable>() != null) {
+                    print("Activatable");
+                    data.activated = obj.GetComponent<Activatable>().activated;
+                }
 
-			interactablesData.Add (data);
+                genericDataList.Add(data);
 
-			print ("Saved: " + data.name + " [" + data.position + "]");
+                print("Saved: " + data.name + " [" + data.position + "]");
+            } else {
+              print("Obj null");
+            }
 		}
+		*/
 	}
 
-	public void loadLevelObjects(List<GameObject> interactables) {
-		if (interactablesData == null) {
-		} else if (interactablesData.Count == 0) {
-		} else if (interactablesData.Count > 0) {
-			foreach (GameObject obj in interactables) {
-				foreach (State data in interactablesData) {
+	public void loadLevelObjects(List<GameObject> genericData) {
+        /*print("Loading Data from new Level");
+		if (genericDataList == null) {
+		} else if (genericDataList.Count == 0) {
+		} else if (genericDataList.Count > 0) {
+			foreach (GameObject obj in genericData) {
+				foreach (State data in genericDataList) {
 					if (obj.name == data.name) {
 						print ("Loading " + data.name + " data");
 						obj.name = obj.name + loadedFlag; // this is assuming the  LevelData loads all objects in the same, sequential order
@@ -119,6 +121,6 @@ public class LevelManager : MonoBehaviour {
 					}
 				}
 			}
-		}
+		}*/
 	}
 }

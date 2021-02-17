@@ -1,0 +1,10 @@
+up=w
+down=s
+left=a
+right=d
+interact=e
+useItem=r
+climb=q
+run=KeyCode.LeftShift
+throwItem=f
+cycleRight=Tab

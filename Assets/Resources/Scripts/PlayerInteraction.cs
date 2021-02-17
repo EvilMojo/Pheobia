@@ -18,8 +18,9 @@ public class PlayerInteraction : MonoBehaviour {
 
 	public bool interact() {
 		bool interactionfound = false;
-		//The interactable (target) is a child of the core item object
-		//print ("Targetto: " + target.name);
+        //The interactable (target) is a child of the core item object
+        //print ("Targetto: " + target.name);
+        //print("Interacting: " + target.name);
 		if (target != null) {
 			if (target.GetComponent<Interactable> () != null && target.activeSelf) {
 				target.GetComponent<Interactable> ().executeInteraction ();

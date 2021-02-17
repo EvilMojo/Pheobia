@@ -15,7 +15,14 @@ public class GameManager : MonoBehaviour {
 		cameraTarget = GameObject.Find ("CameraTarget").gameObject;
 		cameraTarget.GetComponent<CameraControl>().preserve ();
 
-		transform.Find ("LevelManager").gameObject.GetComponent<LevelManager> ().generateLevel ("Tutorial");
+		GameObject LazyCoder = GameObject.Find ("Lazycoder");
+
+		if (LazyCoder == null) {
+			transform.Find ("LevelManager").gameObject.GetComponent<LevelManager> ().generateLevel ("Tutorial"); 
+		}
+		else {
+			transform.Find ("LevelManager").gameObject.GetComponent<LevelManager> ().generateLevel (LazyCoder.GetComponent<LazyCoder>().level);
+		}
 	}
 
 }
