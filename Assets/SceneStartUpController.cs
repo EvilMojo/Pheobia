@@ -24,7 +24,8 @@ public class SceneStartUpController : MonoBehaviour {
 		//Move Spawn point to last saved spawn and place player at spawn point location
 		player = GameObject.Find("playerCharacter");
 		playerSpawnPoint = GameObject.Find ("PlayerSpawnPoint");
-		playerSpawnPoint.transform.SetPositionAndRotation (levelData.GetComponent<LevelData> ().playerSpawnLocation);
+		playerSpawnPoint.transform.SetPositionAndRotation (levelData.GetComponent<LevelData> ().playerSpawnLocation, new Quaternion (0,0,0,0));
 		player.transform.SetPositionAndRotation(playerSpawnPoint.transform.position, playerSpawnPoint.transform.rotation);
+
 	}
 }

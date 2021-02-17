@@ -95,6 +95,10 @@ public class PlayerManager : MonoBehaviour {
 			//Destroy (GameObject.Find("playerCharacter ragdoll"));
 		}*/
 
+		if (Input.GetKey (KeyCode.Escape)) {
+			Application.Quit();
+		}
+
 		if (GameObject.Find ("PlayerSpawnPoint") == null) {
 			print ("CREATING NEW SPAWNPOINT");
 			GameObject spawn = new GameObject ();

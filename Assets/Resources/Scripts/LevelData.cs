@@ -82,7 +82,7 @@ public class LevelData : MonoBehaviour {
 		foreach (GameObject obj in genericData)
 		{
 			if (obj != null) {
-				State data;
+				LevelManager.State data;
 
 				data.name = obj.name;
 				data.position = new Vector3(obj.transform.position.x, obj.transform.position.y, obj.transform.position.z);
@@ -94,7 +94,7 @@ public class LevelData : MonoBehaviour {
 					data.activated = obj.GetComponent<Activatable>().activated;
 				}
 
-				genericDataList.Add(data);
+				//genericDataList.Add(data);
 
 				print("Saved: " + data.name + " [" + data.position + "]");
 			} else {

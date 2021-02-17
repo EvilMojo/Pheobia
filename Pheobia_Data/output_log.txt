@@ -1,0 +1,85 @@
+Initialize engine version: 5.6.7f1 (e80cc3114ac1)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1060 6GB (ID=0x1c03)
+    Vendor:   NVIDIA
+    VRAM:     6052 MB
+    Driver:   27.21.14.5671
+Begin MonoManager ReloadAssembly
+Platform assembly: D:\GameDev\Unity Projects\Pheobia\Pheobia_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading D:\GameDev\Unity Projects\Pheobia\Pheobia_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: D:\GameDev\Unity Projects\Pheobia\Pheobia_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading D:\GameDev\Unity Projects\Pheobia\Pheobia_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: D:\GameDev\Unity Projects\Pheobia\Pheobia_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading D:\GameDev\Unity Projects\Pheobia\Pheobia_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: D:\GameDev\Unity Projects\Pheobia\Pheobia_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading D:\GameDev\Unity Projects\Pheobia\Pheobia_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+- Completed reload, in  0.207 seconds
+Platform assembly: D:\GameDev\Unity Projects\Pheobia\Pheobia_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: D:\GameDev\Unity Projects\Pheobia\Pheobia_Data\Managed\System.dll (this message is harmless)
+desktop: 3840x2160 60Hz; virtual: 7680x2160 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+UnloadTime: 0.974300 ms
+Game Manager Not Found
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Unloading 7 Unused Serialized files (Serialized files now loaded: 0)
+NullReferenceException: Object reference not set to an instance of an object
+  at SceneTransferController.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Starting Tutorial
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at SceneStartUpController.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Setting up 8 worker threads for Enlighten.
+  Thread -> id: 346c -> priority: 1 
+  Thread -> id: 38bc -> priority: 1 
+  Thread -> id: 39e8 -> priority: 1 
+  Thread -> id: 4654 -> priority: 1 
+  Thread -> id: 1170 -> priority: 1 
+  Thread -> id: 4c34 -> priority: 1 
+  Thread -> id: 2e4c -> priority: 1 
+  Thread -> id: 234 -> priority: 1 
+UnloadTime: 3.125700 ms
+CameraTarget (UnityEngine.GameObject)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+CREATING NEW SPAWNPOINT
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+
+Unloading 41 unused Assets to reduce memory usage. Loaded Objects now: 491.
+Total: 0.439800 ms (FindLiveObjects: 0.048900 ms CreateObjectMapping: 0.017300 ms MarkObjects: 0.232300 ms  DeleteObjects: 0.140700 ms)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.071300 ms
+
+Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 1059.
+Total: 0.234300 ms (FindLiveObjects: 0.032200 ms CreateObjectMapping: 0.012100 ms MarkObjects: 0.154000 ms  DeleteObjects: 0.035600 ms)
+
+Starting Tutorial
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at SceneStartUpController.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+CREATING NEW SPAWNPOINT
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
